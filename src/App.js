@@ -64,8 +64,8 @@ function App() {
     setCurrency2(newCurrency2);
  }
   return (
-    <div className="App container">
-        <div>
+    <div className="App">
+        <div className='container'>
               <h1> Currency Converter</h1>
               <CurrInput 
               onAmountChange={handleAmount1Change}
@@ -85,7 +85,7 @@ function App() {
               currency={currency2} 
               /> 
          </div>
-          <div className='tables'>
+          <div className='container'>
             <h1>Most Popular Pairs</h1>
             <TablePair rates={rates}/> 
           </div>
