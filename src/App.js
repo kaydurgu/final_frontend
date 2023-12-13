@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="App">
         <h1> Zhanbolot</h1>
-        <CurrInput/>
-        <CurrInput/>
+        <CurrInput currencies={['USD']} amount={1} currency={'USD'} />
+        <CurrInput currencies={['USD']} amount={1} currency={'USD'} /> 
     </div>
   );
 }
