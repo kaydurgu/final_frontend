@@ -7,16 +7,21 @@ function App() {
 
   const [amount1, setAmount1] = useState(1);
   const [amount2, setAmount2] = useState(1);
-  const [currency1 ,setCurrency1] = useState('USD');
-  const [currency2 ,setCurrency2] = useState('USD');
+  const [currency1 ,setCurrency1] = useState('KGS');
+  const [currency2 ,setCurrency2] = useState('KGS');
   const [rates , setRates] = useState([]);
   function format(number) {
     return number.toFixed(4);
   }
   useEffect(() => {
-    axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=wTGSZhXWhsoMaTb7sMBijxO3w8YaufE8')
+    axios.get('https://api.apilayer.com/fixer/latest?base=KGS&apikey=wTGSZhXWhsoMaTb7sMBijxO3w8YaufE8')
     .then(response => {
+      
       setRates(response.data.rates);
+      rates['Qorot'] = 5.000;
+      rates['Nan'] = 28.000;
+      rates['Toibos'] = 72.000;
+      rates['Shaurma'] = 200.000;
     })
   }, [])
 
