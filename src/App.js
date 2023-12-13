@@ -3,6 +3,7 @@ import './App.css';
 import CurrInput from './components/CurrInput';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import TablePair from './components/TablePair';
 function App() {
 
   const [amount1, setAmount1] = useState(1);
@@ -16,12 +17,11 @@ function App() {
   useEffect(() => {
     axios.get('https://api.apilayer.com/fixer/latest?base=KGS&apikey=wTGSZhXWhsoMaTb7sMBijxO3w8YaufE8')
     .then(response => {
-      
+      response.data.rates['Qorot'] = 0.2000;
+      response.data.rates['Nan'] = 0.0357;
+      response.data.rates['Toibos'] = 0.0138;
+      response.data.rates['Shaurma'] = 0.005;
       setRates(response.data.rates);
-      rates['Qorot'] = 5.000;
-      rates['Nan'] = 28.000;
-      rates['Toibos'] = 72.000;
-      rates['Shaurma'] = 200.000;
     })
   }, [])
 
@@ -72,6 +72,8 @@ function App() {
         amount={amount2} 
         currency={currency2} 
         /> 
+        <h1>Most Popular Pairs</h1>
+        <TablePair rates={rates}/> 
     </div>
   );
 }
