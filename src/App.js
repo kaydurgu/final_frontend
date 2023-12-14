@@ -16,7 +16,7 @@ function App() {
     return number.toFixed(4);
   }
   useEffect(() => {
-    axios.get('https://api.apilayer.com/fixer/latest?base=KGS&apikey=wTGSZhXWhsoMaTb7sMBijxO3w8YaufE8')
+    axios.get('https://api.apilayer.com/fixer/latest?base=KGS&apikey=pQts4gW5AAjyCbn9g1SoUGey44fV95cM')
     .then(response => {
       response.data.rates['Qorot'] = 0.2000;
       response.data.rates['Nan'] = 0.0357;
@@ -64,8 +64,8 @@ function App() {
     setCurrency2(newCurrency2);
  }
   return (
-    <div className="App">
-        <div className='container'>
+    <div className="App container">
+        <div>
               <h1> Currency Converter</h1>
               <CurrInput 
               onAmountChange={handleAmount1Change}
@@ -76,7 +76,7 @@ function App() {
               />
               <button className="btn btn-primary" onClick={handleButtonClick}>
           <FaExchangeAlt />
-           </button>
+        </button>
               <CurrInput  
               onAmountChange={handleAmount2Change}
               onCurrencyChange={handleCurrency2Change}
@@ -85,7 +85,7 @@ function App() {
               currency={currency2} 
               /> 
          </div>
-          <div className='container'>
+          <div className='tables'>
             <h1>Most Popular Pairs</h1>
             <TablePair rates={rates}/> 
           </div>
