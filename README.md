@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Real-Time Currency Converter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a real-time currency converter built using [React](https://reactjs.org/) and the [Fixer API](https://fixer.io/).
 
-## Available Scripts
+[PROJECT LINK ](https://finalfrontendcurrencyexchange.netlify.app/)
 
-In the project directory, you can run:
+![Main Page](https://github.com/kaydurgu/final_frontend/blob/main/public/pics/main.page.PNG)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Converts between various currencies in real-time has 168 rates of 168 currencies
+   ![Currency Converter](https://github.com/kaydurgu/final_frontend/blob/main/public/pics/curr%20converter.PNG)
+  
+- Additional conversion to unique units: qorot, nan, shoro, toibos, shaurma
+  
+  ![Additional units](https://github.com/kaydurgu/final_frontend/blob/main/public/pics/additional%20units.PNG)
+  
+- Includes a table of most popular currency pairs
+  ![table](https://github.com/kaydurgu/final_frontend/blob/main/public/pics/most%20popular%20pairs.PNG)
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React](https://reactjs.org/)
+- [Axios](https://github.com/axios/axios)
+- [Fixer API](https://fixer.io/)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository.
+2. Install dependencies using `npm install` or `yarn install`.
+3. Get your API key from Fixer and replace `YOUR_API_KEY` in the code.
+4. Run the app using `npm start` or `yarn start`.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Input an amount in one currency and select another currency for conversion.
+- Additional conversions to unique units can be selected from the dropdown.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Contribute
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make changes and commit them (`git commit -am 'Add feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a Pull Request.
